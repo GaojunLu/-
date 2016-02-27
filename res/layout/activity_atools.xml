@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/setupTitle"
+        android:text="高级工具"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="归属地查询"
+        android:onClick="queryAddress"
+        android:background="@drawable/bg_selector_conner_blue"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="常用号码查询"
+        android:onClick="queryCommAddress"
+        android:background="@drawable/bg_selector_conner_blue"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信备份"
+        android:onClick="saveSMS"
+        android:background="@drawable/bg_selector_conner_blue"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信还原"
+        android:onClick="loadSMS"
+        android:background="@drawable/bg_selector_conner_blue"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="程序锁定"
+        android:onClick="appLock"
+        android:background="@drawable/bg_selector_conner_blue"/>
+    
+
+</LinearLayout>

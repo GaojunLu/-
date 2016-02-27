@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setupTitle"
+        android:layout_height="40dp"
+        android:text="程序锁定" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#220099ff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bt_not_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_left_pressed"
+            android:gravity="center"
+            android:text="未锁定"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/bt_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_right_default"
+            android:gravity="center"
+            android:text="已锁定"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_count_applock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/fl_applock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listview_applock_notlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/listview_applock_locked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

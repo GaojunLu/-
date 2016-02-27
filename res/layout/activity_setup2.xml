@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jim="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setupTitle"
+        android:text="2.手机卡绑定" />
+
+    <TextView
+        style="@style/setupText"
+        android:text="通过绑定手机卡\n下次重启手机发现SIM卡变化\n就会发送报警短信" />
+
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_setup2_bindsim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jim:itemTitle="点击绑定SIM卡" >
+    </com.example.mobilesafe.ui.SettingItem>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bind"
+            android:layout_centerInParent="true"/>
+        <Button 
+            android:id="@+id/bt_setup_next"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_selector_conner_blue"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="下一步"
+            android:drawableRight="@drawable/next"
+            android:onClick="next"/>
+        <Button 
+            android:id="@+id/bt_setup_pre"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_selector_conner_blue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="上一步"
+            android:drawableLeft="@drawable/previous"
+            android:onClick="pre"/>
+    </RelativeLayout>
+</LinearLayout>

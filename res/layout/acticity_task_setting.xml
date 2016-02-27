@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jim="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#33220000"
+        android:gravity="center"
+        android:text="进程管理设置"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_show_systask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jim:itemTitle="是否显示系统进程" >
+    </com.example.mobilesafe.ui.SettingItem>
+
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_auto_kill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jim:itemTitle="锁屏清理进程" >
+    </com.example.mobilesafe.ui.SettingItem>
+
+</LinearLayout>

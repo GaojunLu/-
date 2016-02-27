@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setupTitle"
+        android:text="1.欢迎使用手机防盗" />
+
+    <TextView
+        style="@style/setupText"
+        android:text="您的手机防盗卫士" />
+
+    <TextView
+        style="@style/setupItem"
+        android:text="sim卡变更报警" />
+
+    <TextView
+        style="@style/setupItem"
+        android:text="GPS追踪" />
+
+    <TextView
+        style="@style/setupItem"
+        android:text="远程数据销毁" />
+
+    <TextView
+        style="@style/setupItem"
+        android:text="远程锁屏" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setup1"
+            android:layout_centerInParent="true"/>
+         <Button 
+            android:id="@+id/bt_setup_next"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_selector_conner_blue"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="下一步"
+            android:drawableRight="@drawable/next"
+            android:onClick="next"/>
+    </RelativeLayout>
+
+</LinearLayout>

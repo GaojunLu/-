@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView 
+        android:id="@+id/tv_phone_item_listview_activity_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1333333333"
+        android:textSize="18sp"
+        android:textColor="#ff0000"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_type_item_listview_activity_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="拦截类型"
+        android:textColor="#aa000000"
+        android:textSize="15sp" 
+        android:layout_below="@id/tv_phone_item_listview_activity_contact"/>
+
+    <ImageView
+        android:id="@+id/iv_item_listview_activity_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_menu_delete" />
+
+</RelativeLayout>

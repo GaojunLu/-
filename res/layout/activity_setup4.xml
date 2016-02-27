@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jim="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView
+        style="@style/setupTitle"
+        android:text="4.恭喜您，设置完成" />
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_setup4_protect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jim:itemTitle="开启防盗保护">
+    </com.example.mobilesafe.ui.SettingItem>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="激活高级功能"
+        android:background="@drawable/bg_selector_conner_blue"
+        android:onClick="activeAdmin"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:layout_centerInParent="true"/>
+        <Button 
+            android:id="@+id/bt_setup_next"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_selector_conner_blue"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="设置完成"
+            android:drawableRight="@drawable/next"
+            android:onClick="next"/>
+        <Button 
+            android:id="@+id/bt_setup_pre"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_selector_conner_blue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="上一步"
+            android:drawableLeft="@drawable/previous"
+            android:onClick="pre"/>
+    </RelativeLayout>
+
+</LinearLayout>

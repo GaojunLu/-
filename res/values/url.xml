@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="updatejson">http://192.168.1.5/update.json</string>
+    <string name="updateDB">http://192.168.1.5/updatedb.json</string>
+    
+</resources>

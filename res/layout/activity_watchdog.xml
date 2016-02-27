@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/setupTitle"
+        android:text="应用程序已被锁定"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <ImageView 
+            android:id="@+id/iv_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="3dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称啊啊啊啊啊"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    
+    <EditText 
+        android:layout_marginTop="15dp"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:hint="输入解锁密码"
+        android:background="@drawable/bg_btn_normal"/>
+    
+    <Button 
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_selector_conner_blue"
+        android:text="确定"
+        android:onClick="click"/>
+    
+
+</LinearLayout>

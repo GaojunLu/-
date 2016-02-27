@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jim="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#33220000"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_setting_autoupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        jim:itemTitle="启用自动更新">
+    </com.example.mobilesafe.ui.SettingItem>
+
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_setting_intercept_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        jim:itemTitle="启用黑名单拦截">
+    </com.example.mobilesafe.ui.SettingItem>
+    
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_setting_phoneaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jim:itemTitle="启用归属地显示" >
+    </com.example.mobilesafe.ui.SettingItem>
+    
+    <com.example.mobilesafe.ui.SettingItemShowDialog
+        android:id="@+id/stsd_setting_address_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jim:itemTitle="设置归属地显示颜色">
+    </com.example.mobilesafe.ui.SettingItemShowDialog>
+    
+    <com.example.mobilesafe.ui.SettingItem
+        android:id="@+id/st_setting_watchdog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        jim:itemTitle="启用看门狗服务">
+    </com.example.mobilesafe.ui.SettingItem>
+    
+</LinearLayout>
